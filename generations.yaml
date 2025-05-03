@@ -1,0 +1,15 @@
+generations:
+  - name: "First Generation"
+    start_year: 2007
+    end_year: 2012
+    description: "The first generation RDX was Acura's entry into the compact luxury SUV segment. It was powered by a turbocharged 2.3L four-cylinder engine producing 240 HP and featured Acura's Super Handling All-Wheel Drive (SH-AWD) system. The sporty RDX was notable for being one of the first luxury crossovers to use a turbocharged four-cylinder engine instead of a V6."
+
+  - name: "Second Generation"
+    start_year: 2013
+    end_year: 2018
+    description: "The second generation RDX took a more conventional approach with a naturally aspirated 3.5L V6 engine producing 273 HP. While it still offered all-wheel drive, the complex SH-AWD system was replaced with a simpler system. This generation focused more on comfort, refinement, and fuel efficiency while increasing interior space and adding more luxury features."
+
+  - name: "Third Generation"
+    start_year: 2019
+    end_year: null
+    description: "The current RDX returned to its sporty roots with a turbocharged 2.0L four-cylinder engine producing 272 HP and the return of the SH-AWD system. Built on an Acura-exclusive platform, this generation features more dynamic styling, an advanced touchpad-controlled infotainment system, and enhanced driving dynamics. The A-Spec trim offers sportier appearance elements, while a PMC Edition hand-built at the same facility as the NSX was offered as a limited production model."
