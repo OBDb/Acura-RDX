@@ -1,4 +1,4 @@
-command_id: DA60.227028
+command_id: DA60.60.227028
 test_cases:
 - expected_values:
     ACURA_AAT: 0

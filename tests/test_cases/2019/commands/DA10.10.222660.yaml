@@ -1,4 +1,4 @@
-command_id: DA10.222660
+command_id: DA10.10.222660
 test_cases:
 - expected_values:
     ACURA_ODO: 161539
