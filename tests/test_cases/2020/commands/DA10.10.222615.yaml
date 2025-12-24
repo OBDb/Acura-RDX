@@ -1,4 +1,4 @@
-command_id: DA10.222615
+command_id: DA10.10.222615
 test_cases:
 - expected_values:
     ACURA_ACTIVE_CYL: 0
