@@ -54,6 +54,7 @@ supported_commands_by_ecu:
   - DB33.010F:IAT
   - DB33.0110:MAF
   - DB33.0111:TP
+  - DB33.011F:RUNTM
   - DB33.012C:EGR_PCT
   - DB33.012D:EGR_ERR
   - DB33.012E:EVAP_PCT
@@ -67,6 +68,7 @@ supported_commands_by_ecu:
   - DB33.0142:VPWR
   - DB33.0143:LOAD_ABS
   - DB33.0144:EQ_RAT
+  - DB33.0145:TP_R
   - DB33.0147:TP_B
   - DB33.0149:APP_D
   - DB33.014A:APP_E
