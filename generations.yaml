@@ -4,15 +4,30 @@ references:
 generations:
   - name: "First Generation"
     start_year: 2007
+    end_year: 2009
+    description: "The first generation RDX was Acura's entry into the compact luxury SUV segment. It was powered by a turbocharged 2.3L four-cylinder engine producing 240 HP and featured Acura's Super Handling All-Wheel Drive (SH-AWD) system. The sporty RDX was notable for being one of the first luxury crossovers to use a turbocharged four-cylinder engine instead of a V6. Production began in July 2006 for the 2007 model year."
+
+  - name: "First Generation (2010 Facelift)"
+    start_year: 2010
     end_year: 2012
-    description: "The first generation RDX was Acura's entry into the compact luxury SUV segment. It was powered by a turbocharged 2.3L four-cylinder engine producing 240 HP and featured Acura's Super Handling All-Wheel Drive (SH-AWD) system. The sporty RDX was notable for being one of the first luxury crossovers to use a turbocharged four-cylinder engine instead of a V6."
+    description: "The facelifted first generation RDX debuted in August 2009 for the 2010 model year, featuring Acura's 'power plenum' grille and the addition of a front-wheel drive option alongside the turbocharged 2.3L engine and SH-AWD system."
 
   - name: "Second Generation"
     start_year: 2013
+    end_year: 2015
+    description: "The second generation RDX was revealed in January 2012 and went on sale in April 2012 for the 2013 model year. It took a more conventional approach with a naturally aspirated 3.5L V6 engine producing 273 HP. While it still offered all-wheel drive, the complex SH-AWD system was replaced with a simpler system. This generation focused more on comfort, refinement, and fuel efficiency while increasing interior space and adding more luxury features."
+
+  - name: "Second Generation (2016 Facelift)"
+    start_year: 2016
     end_year: 2018
-    description: "The second generation RDX took a more conventional approach with a naturally aspirated 3.5L V6 engine producing 273 HP. While it still offered all-wheel drive, the complex SH-AWD system was replaced with a simpler system. This generation focused more on comfort, refinement, and fuel efficiency while increasing interior space and adding more luxury features."
+    description: "The refreshed 2016 RDX was introduced at the 2015 Chicago Auto Show with sales beginning in mid-April 2015. It featured a more powerful 3.5L V6 producing 279 HP with updated styling including LED headlights and LED taillamps. The 2016 RDX also introduced the AcuraWatch advanced safety package with Adaptive Cruise Control and Lane Keeping Assist System (LKAS), and an updated AWD system capable of sending up to 50% torque to rear wheels."
 
   - name: "Third Generation"
     start_year: 2019
+    end_year: 2021
+    description: "The third generation RDX debuted at the 2018 North American International Auto Show on January 15, 2018, with production beginning in May 2018. It returned to its sporty roots with a turbocharged 2.0L four-cylinder engine producing 272 HP and the return of the SH-AWD system. Built on the Honda Architecture platform, this generation features more dynamic styling, an advanced touchpad-controlled infotainment system (True Touch Pad Interface), and enhanced driving dynamics. The A-Spec trim offers sportier appearance elements, while a limited-production PMC Edition was hand-built at the same facility as the NSX."
+
+  - name: "Third Generation (2022 Facelift)"
+    start_year: 2022
     end_year: null
-    description: "The current RDX returned to its sporty roots with a turbocharged 2.0L four-cylinder engine producing 272 HP and the return of the SH-AWD system. Built on an Acura-exclusive platform, this generation features more dynamic styling, an advanced touchpad-controlled infotainment system, and enhanced driving dynamics. The A-Spec trim offers sportier appearance elements, while a PMC Edition hand-built at the same facility as the NSX was offered as a limited production model."
+    description: "The 2022 model year RDX received a facelift in September 2021 with new front and rear fascias, new exterior colors, new alloy wheel designs, and increased interior sound insulation. New features include wireless Apple CarPlay and Android Auto integration. As of the 2024 model year, SH-AWD became standard on all RDX trims, with front-wheel-drive being discontinued as an option."
