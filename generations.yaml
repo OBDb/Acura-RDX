@@ -1,3 +1,6 @@
+references:
+  - "https://en.wikipedia.org/wiki/Acura_RDX"
+
 generations:
   - name: "First Generation"
     start_year: 2007
