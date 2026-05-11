@@ -63,6 +63,7 @@ supported_commands_by_ecu:
   - DB33.0131:CLR_DIST
   - DB33.0144:EQ_RAT
   - DB33.0166:MAFA,MAFA_SUP,MAFB,MAFB_SUP
+  - DB33.01A6:ODO
 unsupported_commands_by_ecu:
   "DA11":
   - DA11.11.222611:ACURA_AIRGAS_RATIO_V2
