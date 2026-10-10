@@ -1,6 +1,7 @@
 command_id: DA1D.1D.222201
 test_cases:
 - expected_values:
+    ACURA_ATF_T: 36
     ACURA_ATF_T_NEW: 36
   response: |-
     18DAF11D1027622201FFFFFF
@@ -10,6 +11,7 @@ test_cases:
     18DAF11D2463874C8E000000
     18DAF11D2500000000005555
 - expected_values:
+    ACURA_ATF_T: 38
     ACURA_ATF_T_NEW: 38
   response: |-
     18DAF11D1027622201FFFFFF
@@ -19,6 +21,7 @@ test_cases:
     18DAF11D2463804E8D010000
     18DAF11D2500000000005555
 - expected_values:
+    ACURA_ATF_T: 37
     ACURA_ATF_T_NEW: 37
   response: |-
     18DAF11D1027622201FFFFFF
@@ -28,6 +31,7 @@ test_cases:
     18DAF11D2463834D8D010000
     18DAF11D2500000000005555
 - expected_values:
+    ACURA_ATF_T: 37
     ACURA_ATF_T_NEW: 37
   response: |-
     18DAF11D1027622201FFFFFF
@@ -37,6 +41,7 @@ test_cases:
     18DAF11D2463834D8D010000
     18DAF11D2500000000005555
 - expected_values:
+    ACURA_ATF_T: 36
     ACURA_ATF_T_NEW: 36
   response: |-
     18DAF11D1027622201FFFFFF
@@ -46,6 +51,7 @@ test_cases:
     18DAF11D2463864C8C010000
     18DAF11D2500000000005555
 - expected_values:
+    ACURA_ATF_T: 37
     ACURA_ATF_T_NEW: 37
   response: |-
     18DAF11D1027622201FFFFFF
@@ -55,6 +61,7 @@ test_cases:
     18DAF11D2463844D8C020000
     18DAF11D2500000000005555
 - expected_values:
+    ACURA_ATF_T: 37
     ACURA_ATF_T_NEW: 37
   response: |-
     18DAF11D1027622201FFFFFF
@@ -64,6 +71,7 @@ test_cases:
     18DAF11D2463844D8D040000
     18DAF11D2500000000005555
 - expected_values:
+    ACURA_ATF_T: 36
     ACURA_ATF_T_NEW: 36
   response: |-
     18DAF11D1027622201FFFFFF
@@ -73,6 +81,7 @@ test_cases:
     18DAF11D2463864C8E050000
     18DAF11D2500000000005555
 - expected_values:
+    ACURA_ATF_T: 36
     ACURA_ATF_T_NEW: 36
   response: |-
     18DAF11D1027622201FFFFFF
