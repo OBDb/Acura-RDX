@@ -1,4 +1,239 @@
 { "commands": [
-
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2610"}, "freq": 1,
+  "signals": [
+    {"id": "RDX_GENERATOR_PCM", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Generator"},
+    {"id": "RDX_AC_CLUTCH_PCM", "path": "Engine", "fmt": {"bix": 262, "len": 1, "max": 1,                           "unit": "offon"   }, "name": "A/C clutch"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2611"}, "freq": 5,
+  "signals": [
+    {"id": "RDX_FUEL_AIR_RATIO_PCM", "path": "Fuel",   "fmt": {           "len": 8,  "max": 255,                             "unit": "scalar" }, "name": "Fuel/air commanded equivalence ratio"},
+    {"id": "RDX_AIRGAS_RATIO_PCM",   "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 29.4, "mul": 29.4, "div": 65535, "unit": "scalar" }, "name": "Air/gas ratio"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2612"}, "freq": 1,
+  "signals": [
+    {"id": "RDX_CURRENT_GEAR_VAR_2", "path": "Transmission", "fmt": {"bix": 352, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear var.2"},
+    {"id": "RDX_CURRENT_GEAR_VAR_3", "path": "Transmission", "fmt": {"bix": 368, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear var.3"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2613"}, "freq": 1,
+  "signals": [
+    {"id": "RDX_AC_P", "path": "Climate", "fmt": {"bix": 120, "len": 16, "max": 4000, "unit": "kilopascal" }, "name": "A/C pressure"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2615"}, "freq": 0.5,
+  "signals": [
+    {"id": "RDX_ACTIVE_CYL_PCM", "path": "Engine", "fmt": {"bix": 400, "len": 8, "max": 6, "unit": "scalar" }, "name": "Active cylinders"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2660"}, "freq": 5,
+  "signals": [
+    {"id": "RDX_ODO_PCM",   "path": "Trips",  "fmt": {"bix": 344, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer",                "suggestedMetric": "odometer"},
+    {"id": "RDX_RUNTM_PCM", "path": "Clocks", "fmt": {"bix": 368, "len": 16, "max": 65535,    "unit": "seconds"    }, "name": "Time since engine start", "description": "How long it's been since the engine started."}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2661"}, "freq": 0.25,
+  "signals": [
+    {"id": "RDX_FUELAIR_CAR_PCM", "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 29.4, "div": 2229.08163265, "unit": "scalar" }, "name": "Fuel/air commanded equivalence ratio"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2662"}, "freq": 0.25,
+  "signals": [
+    {"id": "RDX_KNOCK_CONTROL_PCM", "path": "ECU",    "fmt": {"bix": 80,  "len": 8, "max": 2,   "mul": 2,   "div": 255, "unit": "scalar"  }, "name": "Knock control"},
+    {"id": "RDX_VTC_DUTY_PCM",      "path": "Engine", "fmt": {"bix": 224, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Variable valve timing duty"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2663"}, "freq": 1,
+  "signals": [
+    {"id": "RDX_MISFIRE_COUNT_1_VAR_3_PCM", "path": "Engine", "fmt": {"bix": 160, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #1, variant 3"},
+    {"id": "RDX_MISFIRE_COUNT_2_VAR_3_PCM", "path": "Engine", "fmt": {"bix": 176, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #2, variant 3"},
+    {"id": "RDX_MISFIRE_COUNT_3_VAR_3_PCM", "path": "Engine", "fmt": {"bix": 192, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #3, variant 3"},
+    {"id": "RDX_MISFIRE_COUNT_4_VAR_3_PCM", "path": "Engine", "fmt": {"bix": 208, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #4, variant 3"},
+    {"id": "RDX_MISFIRE_COUNT_5_VAR_3_PCM", "path": "Engine", "fmt": {"bix": 224, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #5, variant 3"},
+    {"id": "RDX_MISFIRE_COUNT_6_VAR_3_PCM", "path": "Engine", "fmt": {"bix": 240, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #6, variant 3"},
+    {"id": "RDX_MIS_1_PCM",                 "path": "ECU",    "fmt": {"bix": 272, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 1"},
+    {"id": "RDX_MIS_2_PCM",                 "path": "ECU",    "fmt": {"bix": 288, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 2"},
+    {"id": "RDX_MIS_3_PCM",                 "path": "ECU",    "fmt": {"bix": 304, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 3"},
+    {"id": "RDX_MIS_4_PCM",                 "path": "ECU",    "fmt": {"bix": 320, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 4"},
+    {"id": "RDX_MISFIRE_5_PCM",             "path": "ECU",    "fmt": {"bix": 336, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 5"},
+    {"id": "RDX_MISFIRE_6_PCM",             "path": "ECU",    "fmt": {"bix": 352, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 6"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "2666"}, "freq": 5,
+  "signals": [
+    {"id": "RDX_EOT_VAR_3_PCM", "path": "Engine", "fmt": {"bix": 88,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 3"},
+    {"id": "RDX_EOT_VAR_4_PCM", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 4"}
+  ]},
+{ "hdr": "DA0E", "rax": "0E", "dbg": true, "cmd": {"22": "266C"}, "freq": 1,
+  "signals": [
+    {"id": "RDX_MISFIRE_COUNT_1_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #1, variant 1"},
+    {"id": "RDX_MISFIRE_COUNT_2_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 56, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #2, variant 1"},
+    {"id": "RDX_MISFIRE_COUNT_3_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 64, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #3, variant 1"},
+    {"id": "RDX_MISFIRE_COUNT_4_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #4, variant 1"},
+    {"id": "RDX_MISFIRE_COUNT_5_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 80, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #5, variant 1"},
+    {"id": "RDX_MISFIRE_COUNT_6_VAR_1_PCM", "path": "Engine", "fmt": {"bix": 88, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #6, variant 1"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2610"}, "freq": 5, "dbgfilter": { "to": 2018, "years": [2021, 2023], "from": 2025 },
+  "signals": [
+    {"id": "RDX_GENERATOR", "path": "Engine",  "fmt": {"bix": 184, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Generator"},
+    {"id": "RDX_AC_CLUTCH", "path": "Climate", "fmt": {"bix": 256, "len": 8, "max": 255,                         "unit": "scalar"  }, "name": "Air conditioner clutch"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2611"}, "freq": 0.25, "dbgfilter": { "to": 2018, "years": [2021, 2023], "from": 2025 },
+  "signals": [
+    {"id": "RDX_FUEL_AIR_RATIO", "path": "Fuel",   "fmt": {           "len": 8,  "max": 255,                             "nullmax": 255,  "unit": "scalar" }, "name": "Fuel/air commanded equivalence ratio"},
+    {"id": "RDX_AIRGAS_RATIO",   "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 29.4, "mul": 29.4, "div": 65535, "nullmax": 29.4, "unit": "scalar" }, "name": "Air/gas ratio"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2612"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2021], "from": 2023 },
+  "signals": [
+    {"id": "RDX_VTEC_CTRL", "path": "ECU", "fmt": {"bix": 168, "len": 8, "max": 255, "unit": "scalar" }, "name": "Variable valve control"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2615"}, "freq": 0.5, "dbgfilter": { "to": 2018, "years": [2021, 2023], "from": 2025 },
+  "signals": [
+    {"id": "RDX_ACTIVE_CYL", "path": "Engine", "fmt": {"bix": 400, "len": 8, "max": 6, "nullmin": 0, "unit": "scalar" }, "name": "Active cylinders"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2660"}, "freq": 5, "dbgfilter": { "to": 2018, "years": [2021, 2023], "from": 2025 },
+  "signals": [
+    {"id": "RDX_ODO",   "path": "Trips",  "fmt": {"bix": 344, "len": 24, "max": 16777215, "nullmin": 0, "unit": "kilometers" }, "name": "Odometer",                "suggestedMetric": "odometer"},
+    {"id": "RDX_RUNTM", "path": "Clocks", "fmt": {"bix": 368, "len": 16, "max": 65535,                  "unit": "seconds"    }, "name": "Time since engine start", "description": "How long it's been since the engine started."}
+  ]},
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2661"}, "freq": 0.25, "dbgfilter": { "to": 2018, "years": [2021, 2023], "from": 2025 },
+  "signals": [
+    {"id": "RDX_FUELAIR_CAR", "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 29.4, "div": 2229.08163265, "unit": "scalar" }, "name": "Fuel/air commanded equivalence ratio"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2662"}, "freq": 0.25, "dbgfilter": { "to": 2018, "years": [2021, 2023], "from": 2025 },
+  "signals": [
+    {"id": "RDX_KNOCK_CTRL", "path": "ECU",    "fmt": {"bix": 80,  "len": 8, "max": 2,   "mul": 2,   "div": 255, "unit": "scalar"  }, "name": "Knock control"},
+    {"id": "RDX_VTC_DUTY",   "path": "Engine", "fmt": {"bix": 224, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Variable valve timing duty"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2663"}, "freq": 1, "dbgfilter": { "to": 2018, "years": [2021, 2023], "from": 2025 },
+  "signals": [
+    {"id": "RDX_MISFIRE_1", "path": "ECU", "fmt": {"bix": 272, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 1"},
+    {"id": "RDX_MISFIRE_2", "path": "ECU", "fmt": {"bix": 288, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 2"},
+    {"id": "RDX_MISFIRE_3", "path": "ECU", "fmt": {"bix": 304, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 3"},
+    {"id": "RDX_MISFIRE_4", "path": "ECU", "fmt": {"bix": 320, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 4"},
+    {"id": "RDX_MISFIRE_5", "path": "ECU", "fmt": {"bix": 336, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 5"},
+    {"id": "RDX_MISFIRE_6", "path": "ECU", "fmt": {"bix": 352, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 6"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "2666"}, "freq": 5,
+  "signals": [
+    {"id": "RDX_EOT_VAR_3", "path": "Engine", "fmt": {"bix": 88,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 3"},
+    {"id": "RDX_EOT_VAR_4", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 4"}
+  ]},
+{ "hdr": "DA11", "rax": "11", "dbg": true, "cmd": {"22": "2610"}, "freq": 1,
+  "signals": [
+    {"id": "RDX_GENERATOR_DA11",         "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Generator"},
+    {"id": "RDX_AIR_CONDITIONER_CLUTCH", "path": "Engine", "fmt": {"bix": 262, "len": 1, "max": 1,                           "unit": "offon"   }, "name": "Air conditioner clutch"}
+  ]},
+{ "hdr": "DA11", "rax": "11", "cmd": {"22": "2611"}, "freq": 5, "dbgfilter": { "to": 2012, "from": 2014 },
+  "signals": [
+    {"id": "RDX_AIRGAS_RATIO_V2", "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 29.4, "mul": 29.4, "div": 65535, "unit": "scalar" }, "name": "Air/gas ratio"}
+  ]},
+{ "hdr": "DA11", "rax": "11", "cmd": {"22": "2612"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
+  "signals": [
+    {"id": "RDX_VTEC_VALVE_CTRL", "path": "Engine", "fmt": {"bix": 175, "len": 1, "max": 1, "unit": "offon" }, "name": "VTEC valve control", "description": "VTEC works by switching between two (or sometimes three) different camshaft profiles by engaging or disengaging a mechanism that locks the valve rocker arms together. When VTEC is OFF, the engine operates using the standard cam profile, which is typically optimized for fuel efficiency and low-end torque. When VTEC is ON, the system switches to a high-performance cam profile that allows the valves to open wider and for a longer duration, enabling better airflow at higher RPMs for increased power."}
+  ]},
+{ "hdr": "DA11", "rax": "11", "cmd": {"22": "2660"}, "freq": 5, "dbgfilter": { "to": 2012, "from": 2014 },
+  "signals": [
+    {"id": "RDX_RUNTM_V2", "path": "Clocks", "fmt": {"bix": 368, "len": 16, "max": 65535, "unit": "seconds" }, "name": "Time since engine start", "description": "How long it's been since the engine started."}
+  ]},
+{ "hdr": "DA11", "rax": "11", "cmd": {"22": "2662"}, "freq": 5, "dbgfilter": { "to": 2012, "from": 2014 },
+  "signals": [
+    {"id": "RDX_KNOCK_CONTROL_V2", "path": "Engine", "fmt": {"bix": 80, "len": 8,  "max": 1.99,             "mul": 1.99, "div": 255,             "unit": "scalar"  }, "name": "Knock control"},
+    {"id": "RDX_CAT_T",            "path": "Engine", "fmt": {"bix": 96, "len": 16, "max": 1500, "min": -40,              "div": 10,  "add": -40, "unit": "celsius" }, "name": "Catalyst temperature"}
+  ]},
+{ "hdr": "DA11", "rax": "11", "dbg": true, "cmd": {"22": "2663"}, "freq": 1,
+  "signals": [
+    {"id": "RDX_MISFIRE_COUNT_1_VAR_3", "path": "Engine", "fmt": {"bix": 160, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #1, variant 3"},
+    {"id": "RDX_MISFIRE_COUNT_2_VAR_3", "path": "Engine", "fmt": {"bix": 176, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #2, variant 3"},
+    {"id": "RDX_MISFIRE_COUNT_3_VAR_3", "path": "Engine", "fmt": {"bix": 192, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #3, variant 3"},
+    {"id": "RDX_MISFIRE_COUNT_4_VAR_3", "path": "Engine", "fmt": {"bix": 208, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #4, variant 3"},
+    {"id": "RDX_MISFIRE_COUNT_5_VAR_3", "path": "Engine", "fmt": {"bix": 224, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #5, variant 3"},
+    {"id": "RDX_MISFIRE_COUNT_6_VAR_3", "path": "Engine", "fmt": {"bix": 240, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #6, variant 3"},
+    {"id": "RDX_MISFIRE_COUNT_1_VAR_2", "path": "Engine", "fmt": {"bix": 272, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #1, variant 2"},
+    {"id": "RDX_MISFIRE_COUNT_2_VAR_2", "path": "Engine", "fmt": {"bix": 288, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #2, variant 2"},
+    {"id": "RDX_MISFIRE_COUNT_3_VAR_2", "path": "Engine", "fmt": {"bix": 304, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #3, variant 2"},
+    {"id": "RDX_MISFIRE_COUNT_4_VAR_2", "path": "Engine", "fmt": {"bix": 320, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #4, variant 2"},
+    {"id": "RDX_MISFIRE_COUNT_5_VAR_2", "path": "Engine", "fmt": {"bix": 336, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #5, variant 2"},
+    {"id": "RDX_MISFIRE_COUNT_6_VAR_2", "path": "Engine", "fmt": {"bix": 352, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #6, variant 2"}
+  ]},
+{ "hdr": "DA11", "rax": "11", "dbg": true, "cmd": {"22": "2666"}, "freq": 5,
+  "signals": [
+    {"id": "RDX_EOT_VAR_1", "path": "Engine", "fmt": {"bix": 88,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 1"},
+    {"id": "RDX_EOT_VAR_2", "path": "Engine", "fmt": {"bix": 112, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variant 2"}
+  ]},
+{ "hdr": "DA11", "rax": "11", "dbg": true, "cmd": {"22": "266C"}, "freq": 1,
+  "signals": [
+    {"id": "RDX_MISFIRE_COUNT_1_VAR_1", "path": "Engine", "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #1, variant 1"},
+    {"id": "RDX_MISFIRE_COUNT_2_VAR_1", "path": "Engine", "fmt": {"bix": 56, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #2, variant 1"},
+    {"id": "RDX_MISFIRE_COUNT_3_VAR_1", "path": "Engine", "fmt": {"bix": 64, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #3, variant 1"},
+    {"id": "RDX_MISFIRE_COUNT_4_VAR_1", "path": "Engine", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #4, variant 1"},
+    {"id": "RDX_MISFIRE_COUNT_5_VAR_1", "path": "Engine", "fmt": {"bix": 80, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #5, variant 1"},
+    {"id": "RDX_MISFIRE_COUNT_6_VAR_1", "path": "Engine", "fmt": {"bix": 88, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count #6, variant 1"}
+  ]},
+{ "hdr": "DA1D", "rax": "1D", "cmd": {"22": "2201"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
+  "signals": [
+    {"id": "RDX_ATF_T_NEW", "path": "Engine", "fmt": {"bix": 208, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
+  ]},
+{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2203"}, "freq": 1,
+  "signals": [
+    {"id": "RDX_EOP", "path": "ECU", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Oil pressure"}
+  ]},
+{ "hdr": "DA1D", "rax": "1D", "fcm1": true, "cmd": {"22": "2221"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
+  "signals": [
+    {"id": "RDX_GEAR_1D", "path": "Transmission", "fmt": {"bix": 184, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear"}
+  ]},
+{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2660"}, "freq": 30,
+  "signals": [
+    {"id": "RDX_ODO_V2", "path": "Trips", "fmt": {"bix": 344, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2663"}, "freq": 1,
+  "signals": [
+    {"id": "RDX_MISFIRE_COUNT_1", "path": "Engine", "fmt": {"bix": 272, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #1"},
+    {"id": "RDX_MISFIRE_COUNT_2", "path": "Engine", "fmt": {"bix": 288, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #2"},
+    {"id": "RDX_MISFIRE_COUNT_3", "path": "Engine", "fmt": {"bix": 304, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #3"},
+    {"id": "RDX_MISFIRE_COUNT_4", "path": "Engine", "fmt": {"bix": 320, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #4"}
+  ]},
+{ "hdr": "DA26", "rax": "26", "cmd": {"22": "6001"}, "freq": 5, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2018, 2021, 2023], "from": 2025 },
+  "signals": [
+    {"id": "RDX_TP_FR", "path": "Tires", "fmt": {"bix": 64,  "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Front right tire pressure",    "suggestedMetric": "frontRightTirePressure"},
+    {"id": "RDX_TP_FL", "path": "Tires", "fmt": {"bix": 80,  "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Front left tire pressure",     "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "RDX_TP_RR", "path": "Tires", "fmt": {"bix": 96,  "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
+    {"id": "RDX_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Rear left tire pressure",      "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "RDX_TT_FR", "path": "Tires", "fmt": {"bix": 192, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Front right tire temperature"},
+    {"id": "RDX_TT_FL", "path": "Tires", "fmt": {"bix": 200, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Front left tire temperature"},
+    {"id": "RDX_TT_RR", "path": "Tires", "fmt": {"bix": 208, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Rear right tire temperature"},
+    {"id": "RDX_TT_RL", "path": "Tires", "fmt": {"bix": 216, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Rear left tire temperature"}
+  ]},
+{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4004"}, "freq": 0.25,
+  "signals": [
+    {"id": "RDX_BRK_SW", "path": "Electrical", "fmt": {"bix": 127, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake switch"}
+  ]},
+{ "hdr": "DA28", "rax": "28", "dbg": true, "cmd": {"22": "4005"}, "freq": 0.25,
+  "signals": [
+    {"id": "RDX_BRK_P", "path": "Electrical", "fmt": {"bix": 56, "len": 16, "max": 120, "add": -25, "unit": "bars" }, "name": "Brake pressure"}
+  ]},
+{ "hdr": "DA2A", "rax": "2A", "dbg": true, "cmd": {"22": "4201"}, "freq": 1,
+  "signals": [
+    {"id": "RDX_BRK_PED_STK",  "path": "Electrical", "fmt": {"bix": 88,  "len": 16, "max": 50,                     "div": 10,                "unit": "millimeters" }, "name": "Brake pedal stroke"},
+    {"id": "RDX_BRK_FLD_P",    "path": "Electrical", "fmt": {"bix": 168, "len": 16, "max": 5,                      "div": 100,               "unit": "unknown"     }, "name": "Brake fluid pressure"},
+    {"id": "RDX_MSTR_CYL_STK", "path": "Electrical", "fmt": {"bix": 232, "len": 16, "max": 3276.7, "min": -3276.8, "div": 10,  "sign": true, "unit": "millimeters" }, "name": "Master cylinder stroke"},
+    {"id": "RDX_SLV_CYL_STK",  "path": "Electrical", "fmt": {"bix": 248, "len": 16, "max": 6553.5,                 "div": 10,                "unit": "millimeters" }, "name": "Slave cylinder stroke"}
+  ]},
+{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "7022"}, "freq": 30,
+  "signals": [
+    {"id": "RDX_ODO_V3", "path": "Trips", "fmt": {"bix": 48, "len": 24, "max": 200000, "unit": "miles" }, "name": "Odometer, variation 3"}
+  ]},
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7028"}, "freq": 5, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2018, 2021, 2023], "from": 2025 },
+  "signals": [
+    {"id": "RDX_AAT_FIRSTGEN", "path": "Climate", "fmt": {"bix": 132, "len": 12, "max": 2047, "min": -40, "sign": true, "nullmax": 61, "unit": "celsius" }, "name": "Outside air temperature"}
+  ]},
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7029"}, "freq": 30, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2018, 2021, 2023], "from": 2025 },
+  "signals": [
+    {"id": "RDX_FLV", "path": "Fuel", "fmt": {"bix": 96, "len": 16, "max": 655, "div": 100, "nullmax": 655, "unit": "liters" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
+  ]},
+{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "7060"}, "freq": 30,
+  "signals": [
+    {"id": "RDX_MAINT_OIL_FLT",   "path": "Engine", "fmt": {"bix": 112, "len": 16, "max": 9999, "unit": "unknown" }, "name": "Maintenance, oil & filter"},
+    {"id": "RDX_MAINT_SPARK",     "path": "Engine", "fmt": {"bix": 128, "len": 16, "max": 9999, "unit": "unknown" }, "name": "Maintenance, spark plugs & valves"},
+    {"id": "RDX_MAINT_INSP",      "path": "Engine", "fmt": {"bix": 208, "len": 16, "max": 9999, "unit": "unknown" }, "name": "Maintenance, general inspection"},
+    {"id": "RDX_MAINT_TIRE",      "path": "Tires",  "fmt": {"bix": 224, "len": 16, "max": 9999, "unit": "unknown" }, "name": "Maintenance, tire rotation"},
+    {"id": "RDX_MAINT_CABIN_FLT", "path": "Engine", "fmt": {"bix": 240, "len": 16, "max": 9999, "unit": "unknown" }, "name": "Maintenance, cabin filter"},
+    {"id": "RDX_MAINT_TRANS_FLD", "path": "Engine", "fmt": {"bix": 256, "len": 16, "max": 9999, "unit": "unknown" }, "name": "Maintenance, transmission fluid"},
+    {"id": "RDX_MAINT_COOL",      "path": "Engine", "fmt": {"bix": 288, "len": 16, "max": 9999, "unit": "unknown" }, "name": "Maintenance, engine coolant"},
+    {"id": "RDX_MAINT_BRK_FLD",   "path": "Engine", "fmt": {"bix": 320, "len": 16, "max": 9999, "unit": "unknown" }, "name": "Maintenance, brake fluid"},
+    {"id": "RDX_MAINT_AIR_CLN",   "path": "Engine", "fmt": {"bix": 336, "len": 16, "max": 9999, "unit": "unknown" }, "name": "Maintenance, air cleaner"}
+  ]}
 ]
 }
