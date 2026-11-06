@@ -54,6 +54,8 @@ supported_commands_by_ecu:
   - 0147:TP_B
   - 0149:APP_D
   - 014A:APP_E
+  - 014C:TAC_PCT
+  - 0151:FUEL_TYP
 unsupported_commands_by_ecu:
   "DA10":
   - DA10.10.222610:RDX_AC_CLUTCH,RDX_GENERATOR
