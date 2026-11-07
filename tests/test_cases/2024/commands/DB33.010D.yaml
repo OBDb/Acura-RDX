@@ -1,6 +1,12 @@
 command_id: DB33.010D
 test_cases:
 - expected_values:
+    VSS: 98
+  response: "18 DA F1 10 03 41 0D 62 \n18 DA F1 1E 03 41 0D 62 "
+- expected_values:
+    VSS: 106
+  response: "18 DA F1 10 03 41 0D 69 \n18 DA F1 1E 03 41 0D 6A "
+- expected_values:
     VSS: 0
   response: 18DAF11003410D00
 - expected_values:

@@ -1,6 +1,24 @@
 command_id: DB33.010C
 test_cases:
 - expected_values:
+    RPM: 1632
+  response: '18 DA F1 10 04 41 0C 19 80 '
+- expected_values:
+    RPM: 1719
+  response: "18 DA F1 10 04 41 0C 1A E8 \n18 DA F1 1E 04 41 0C 1A DC "
+- expected_values:
+    RPM: 1722
+  response: "18 DA F1 10 04 41 0C 1A E8 \n18 DA F1 1E 04 41 0C 1A E8 "
+- expected_values:
+    RPM: 1807
+  response: "18 DA F1 10 04 41 0C 1C 2C \n18 DA F1 1E 04 41 0C 1C 3C "
+- expected_values:
+    RPM: 1905
+  response: "18 DA F1 10 04 41 0C 1D B0 \n18 DA F1 1E 04 41 0C 1D C4 "
+- expected_values:
+    RPM: 1919
+  response: '18 DA F1 10 04 41 0C 1D FC '
+- expected_values:
     RPM: 0
   response: |-
     18DAF11004410C0000
