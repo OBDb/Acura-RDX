@@ -1,0 +1,8 @@
+command_id: DB33.0143
+test_cases:
+- expected_values:
+    LOAD_ABS: 7.05882
+  response: 18DAF10E0441430012
+- expected_values:
+    LOAD_ABS: 76.07843
+  response: 18DAF10E04414300C2
