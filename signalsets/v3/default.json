@@ -84,7 +84,7 @@
     {"id": "RDX_VTEC_PSW", "path": "Engine", "fmt": {"bix": 174, "len": 1, "max": 1, "unit": "offon" }, "name": "VTEC pressure switch"},
     {"id": "RDX_VTEC_SOL", "path": "Engine", "fmt": {"bix": 175, "len": 1, "max": 1, "unit": "offon" }, "name": "VTEC solenoid valve"}
   ]},
-{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2615"}, "freq": 0.5, "dbgfilter": { "to": 2018, "years": [2021, 2023], "from": 2025 },
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "2615"}, "freq": 0.5,
   "signals": [
     {"id": "RDX_ACTIVE_CYL", "path": "Engine", "fmt": {"bix": 400, "len": 8, "max": 6, "nullmin": 0, "unit": "scalar" }, "name": "Active cylinders"}
   ]},
@@ -220,7 +220,7 @@
   "signals": [
     {"id": "RDX_ODO_V3", "path": "Trips", "fmt": {"bix": 48, "len": 24, "max": 200000, "unit": "miles" }, "name": "Odometer, variation 3"}
   ]},
-{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7028"}, "freq": 5, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2017, 2018, 2021, 2023], "from": 2025 },
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7028"}, "freq": 5, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2017, 2018, 2021, 2022, 2023], "from": 2025 },
   "signals": [
     {"id": "RDX_AAT_FIRSTGEN", "path": "Climate", "fmt": {"bix": 132, "len": 12, "max": 2047, "min": -40, "sign": true, "nullmax": 61, "unit": "celsius" }, "name": "Outside air temperature"}
   ]},
