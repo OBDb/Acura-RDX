@@ -1,6 +1,9 @@
 command_id: DB33.010C
 test_cases:
 - expected_values:
+    RPM: 731
+  response: "18 DA F1 10 04 41 0C 0B 6C \n18 DA F1 1E 04 41 0C 0B 6C "
+- expected_values:
     RPM: 1632
   response: '18 DA F1 10 04 41 0C 19 80 '
 - expected_values:
